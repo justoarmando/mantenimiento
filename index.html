@@ -2,78 +2,109 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <!-- Metaetiqueta crucial para Responsive Design -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Básico -->
+    <title>Scudery | Seguridad que nace en las personas</title>
+    <meta name="description" content="En Scudery desarrollamos una cultura de seguridad con enfoque en Humanware. Protegiendo el factor humano como la principal línea de defensa.">
+    <meta name="keywords" content="ciberseguridad, humanware, cultura de seguridad, capacitación, Scudery">
+    <link rel="canonical" href="https://tu-dominio.com/">
 
-    <!-- SEO PRINCIPAL -->
-    <title>SCUDERY | Cultura de Seguridad con Corazón Humano</title>
-
-    <meta name="description"
-          content="En SCUDERY desarrollamos una cultura de seguridad con enfoque humano para empresas y organizaciones. Sitio oficial próximamente disponible.">
-
-    <meta name="keywords"
-          content="SCUDERY, seguridad industrial, cultura de seguridad, prevención, seguridad laboral, consultoría, Paraguay">
-
-    <meta name="author" content="SCUDERY">
-
-    <!-- GOOGLE -->
-    <meta name="robots" content="index, follow">
-
-    <!-- OPEN GRAPH (REDES SOCIALES) -->
-    <meta property="og:title" content="SCUDERY | Cultura de Seguridad con Corazón Humano">
-    <meta property="og:description"
-          content="Estamos desarrollando una cultura de seguridad con corazón humano.">
+    <!-- Open Graph (Para que se vea bien al compartir en LinkedIn/WhatsApp) -->
+    <meta property="og:title" content="Scudery | Humanware y Ciberseguridad">
+    <meta property="og:description" content="Seguridad que nace en las personas.">
     <meta property="og:image" content="logo.png">
-    <meta property="og:type" content="website">
-
-    <!-- FAVICON -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <style>
+        :root {
+            --primary-color: #212529;
+            --secondary-color: #6c757d;
+            --bg-color: #f8f9fa;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh;
+            min-height: 100vh;
             margin: 0;
-            background-color: #f8f9fa;
-            color: #212529;
-            text-align: center;
             padding: 20px;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-        }
-
-        p {
-            font-size: 1.2rem;
-            color: #6c757d;
-            max-width: 600px;
+            background-color: var(--bg-color);
+            color: var(--primary-color);
             line-height: 1.6;
         }
 
+        /* Contenedor principal para control de ancho */
+        .container {
+            max-width: 800px;
+            width: 100%;
+            text-align: center;
+        }
+
         .logo {
-            max-width: 550px;
+            width: 100%;
+            max-width: 350px;
+            height: auto;
             margin-bottom: 2rem;
+            /* Mejora de carga: evita saltos de diseño */
+            aspect-ratio: 3 / 1; 
+            object-fit: contain;
+        }
+
+        h1 {
+            font-size: clamp(1.8rem, 5vw, 2.8rem); /* Texto fluido según pantalla */
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        p {
+            font-size: clamp(1rem, 2.5vw, 1.25rem);
+            color: var(--secondary-color);
+            margin: 0 auto 2rem auto;
+            max-width: 650px;
+        }
+
+        /* Elemento decorativo o botón opcional */
+        .badge {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background-color: #e9ecef;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            color: #495057;
+            margin-bottom: 1rem;
+        }
+
+        /* Media Queries adicionales si fueran necesarias */
+        @media (max-width: 480px) {
+            body {
+                padding: 15px;
+            }
         }
     </style>
 </head>
-
 <body>
 
-    <img src="logo.png"
-         alt="Logo oficial de SCUDERY"
-         class="logo">
-
-    <main>
-          <h1>Sitio en Construcción</h1>
-
+    <main class="container">
+        <!-- SEO: El atributo alt debe tener el nombre de la marca -->
+        <img src="logo.png" alt="Logo de Scudery - Humanware" class="logo">
+        
+        <div class="badge">Próximamente</div>
+        
+        <!-- SEO: Uso de H1 para la palabra clave principal -->
+        <h1>Seguridad que nace en las personas</h1>
+        
         <p>
-            Estamos desarrollando una cultura de seguridad con corazón humano.
-            Pronco conoceras nuestros servicios y novedades.
+            Estamos construyendo una cultura de seguridad con <strong>Corazon Humano</strong>. 
+            Vuelve pronto para descubrir nuestras novedades.
         </p>
     </main>
 
